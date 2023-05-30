@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+p {
+    font-size: 20px;
+}
+
+
+body {
+    background-color: rgba(217, 227, 227, 0.473);
+}
+
+
+.cont {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 8px 8px 10px rgb(173, 216, 216);
+}
+
+
+nav {
+    justify-content: end;
+    display: flex;
+}
+
+
+.anker {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+
+ul {
+    padding-right: 30px;
+    justify-content: end;
+    line-height: 30PX;
+}
+
+
+li {
+    justify-items: space-around;
+}
+
+
+.unord {
+    display: inline-block;
+    position: static;
+    top: 10%;
+    padding: 10px;
+    margin-left: 10px;
+    line-height: 1PX;
+    transition: .3s ease;
+
+}
+
+
+.unord:hover {
+    transform: translateY(-2px);
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+.anker:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+}
+
+
+.center {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.container {
+    position: static;
+    margin: 30px;
+    top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: fit-content;
+}
+
+
+.toggle_btn {
+    width: 35px;
+    position: static;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+
+
+.toggle_btn span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 8px;
+}
+
+
+.ank2 {
+    text-decoration: none;
+    color: black;
+
+}
+
+.end {
+    height: 50px;
+    position: static;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+   
+
+}
+
+
+.cont2 {
+    position: static;
+    top: 90%;
+    padding: 20px 40px;
+
+}
+
+
+.foot_cont2 {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 8px 8px 10px rgb(173, 216, 216);
+    min-height: 150px;
+    padding: 30px;
+    position: static;
+    top: 140%;
+    width: 100%;
+}
+
+
+.li1,.li2 {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+
+.li3 {
+    padding: 5px;
+    list-style-type: none;
+}
+
+
+.links ul {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+
+.links ul li {
+    margin: 20px;
+}
+
+
+.anker_end {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 20px 46%;
+}
+/* ********************************************************** */
+
+
+.hero{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2.2em;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.389);
+    margin: 30px ;
+}
+.hero button {
+    line-height: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: fit-content;    
+}
+.hero button a{
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.hero button:hover {
+    background-color: black;
+    box-shadow: 5px 5px 5px aqua;
+}
+ .hero button a:hover{
+    background-color: black;
+    color: white;
+}
+
+.text{
+    margin: 50px ;
+    line-height: 1.8em;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    box-shadow:0px 10px 10px rgba(173, 216, 216, 0.249); 
+}
+
+
+@media screen and (max-width:1230px) {
+   
+    * {
+        margin: 2px;
+        flex-wrap: nowrap;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        border: 1px dotted black;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    nav.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        float: left;
+    }
+
+    .new {
+        display: block;
+        width: 100%;
+    }
+
+    .anker {
+        width: 100%;
+    }
+
+    .unord {
+        margin: 20px;
+    }
+
+    .image {
+        position: absolute;
+        width: fit-content;
+        top: 10px;
+        left: 75%;
+    }
+    .text{
+        padding: 10px;
+    }
+
+}
+
+
+@media screen and (max-width:850px) {
+    
+    * {
+        margin: 0;
+        flex-wrap: nowrap;
+    }
+
+    .container {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        border: 1px dotted black;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    nav.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        float: left;
+    }
+
+    .new {
+        display: block;
+        width: 100%;
+    }
+
+    .anker {
+
+        width: 100%;
+    }
+
+    .unord {
+        margin: 10px;
+    }
+
+    .image {
+
+        position: absolute;
+        width: fit-content;
+        top: 10px;
+        left: 45%;
+    }
+
+    .anker_end {
+        padding-left: 30%;
+    }
+
+    .foot_cont2 {
+        display: none;
+    }
+    .text{
+        padding: 10px;
+    }
+    
+}

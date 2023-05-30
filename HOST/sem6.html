@@ -1,0 +1,347 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>: : S G P A Sem_6 : :</title>
+    <link rel="stylesheet" href="./sem.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+
+    <div class="cont container new" id="head" style="flex-direction: row;">
+
+        <div class="toggle_btn" onclick="my_fnction();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="image" src="./logo.webp" alt="VTU_LOGO">
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li class="unord"> <a href="./cgpa.html" class="anker"> CGPA CALCULATOR </a></li>
+                <li class="unord"> <a href="./sgpa.html" class="anker"> SGPA CALCULATOR </a></li>
+                <li class="unord"> <a href="#" class="anker"> CGPA TO PERCENTAGE </a></li>
+                <li class="unord"> <a href="./privacy.html" class="anker"> PRIVACY POLICY </a></li>
+                <li class="unord"> <a href="./disclaimer.html" class="anker"> DISCLAIMER </a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="container padding  ">
+
+        <h1 class="center">VTU SGPA Calculator</h1>
+
+        <p class="center">6<sup>th</sup> Sem</p>
+        <p class="center">Enter Marks of all subjects</p>
+
+        <div class="cont1">
+
+            <div class="first">
+
+                <div class="ins">
+                    <label for="sem-1">18***61</label>
+                    <input type="text" id="sem-1" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+
+                <div class="ins">
+                    <label for="sem-2">18***62</label>
+                    <input type="text" id="sem-2" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+
+                <div class="ins">
+                    <label for="sem-3">18***63</label>
+                    <input type="text" id="sem-3" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+
+                <div class="ins">
+                    <label for="sem-4">18***64</label>
+                    <input type="text" id="sem-4" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+
+            </div>
+
+            <div class="sec">
+
+                <div class="ins">
+                    <label for="sem-5">18***65</label>
+                    <input type="text" id="sem-5" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+
+                <div class="ins">
+                    <label for="sem-6">18***66</label>
+                    <input type="text" id="sem-6" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+
+                <div class="ins">
+                    <label for="sem-7">18***67</label>
+                    <input type="text" id="sem-7" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+
+                <div class="ins">
+                    <label for="sem-8">18***68</label>
+                    <input type="text" id="sem-8" pattern="[0-100]" placeholder="[0-100]" required>
+                </div>
+              
+
+            </div>
+            
+
+        </div>
+        
+
+        <!-- <div class="ins center">
+            <label for="sem-8">CGPA : </label>
+            <input type="text" id="calculate" pattern="[0-10]" placeholder="Good Lcuk...!!">
+        </div> -->
+
+
+        <div class="btn  center">
+            <button onclick="calculate_cgpa()">CALCULATE</button>
+            <button onclick="reset_nos()">RESET</button>
+        </div>
+
+    </div>
+
+    <div class="container cont2">
+        <p>To calculate VTU CGPA, enter SGPA of each semster and hit on Calculate. CGPA Will be calculated and
+            displayed. You can
+            also calculate your CGPA as per your choice by entering 2 or 3 SGPA's.</p>
+
+        <br>
+
+        <p>The formula used to calculate VTU CGPA is :
+        </p>
+
+        <br>
+
+        <p class="center under"><u><strong> ∑(Ci x Gi)</strong></u></p>
+        <p class="center"> <strong> ∑ Ci</strong></p>
+
+        <br>
+
+        <p class="center">Where Gi = Grade point of the i<sup>th</sup> course</p>
+        <p class="center">Ci = Total Credits in the i<sup>th</sup> Semester</p>
+
+    </div>
+
+    <div class="container table">
+        <p>The credits for each Semester is as given below :</p>
+        <table>
+
+            <tr>
+                <th>Grade</th>
+                <td>S</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+
+            <tr>
+                <th>Grade Point</th>
+                <td>10</td>
+                <td>9</td>
+                <td>8</td>
+                <td>7</td>
+                <td>6</td>
+                <td>4</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th>Marks</th>
+                <td>90-100</td>
+                <td>80-89</td>
+                <td>70-79</td>
+                <td>60-69</td>
+                <td>45-59</td>
+                <td>40-44</td>
+                <td>0-39</td>
+            </tr>
+            <tr>
+                <th>
+                    performance
+                </th>
+                <td>Outstanding</td>
+                <td>Excellent</td>
+                <td>V. Good</td>
+                <td>Good</td>
+                <td>Above Average</td>
+                <td>Poor</td>
+                <td>Fail</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class=" container foot_cont2" style="flex-direction: row;">
+
+        <div>
+            <img src="./logo.webp" alt="VTU LOGO">
+        </div>
+
+        <div class="links">
+
+            <div>
+                <ul>
+                    <li class="li3"><i class="fa fa-anchor" aria-hidden="true"><a href="./cgpa.html"
+                                class="ank2"> CGPA CALCULATOR
+                            </a></i></li>
+                    <li class="li3"> <i class="fa fa-anchor" aria-hidden="true"><a href=".sgpa.html"
+                                class="ank2"> SGPA
+                                CALCULATOR </a></i></li>
+                    <li class="li3"> <i class="fa fa-anchor" aria-hidden="true"><a href="#" class="ank2"> CGPA TO
+                                PERCENTAGE </a></i></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li class="li3"><i class="fa fa-anchor" aria-hidden="true"> <a href="./privacy.html" class="ank2"> PRIVACY POLICY
+                            </a></i></li>
+                    <li class="li3"> <i class="fa fa-anchor" aria-hidden="true"><a href="./disclaimer.html" class="ank2"> DISCLAIMER
+                            </a></i></li>
+                </ul>
+            </div>
+
+            <br>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="end">
+        <p>Drop your feedback here : sushant28022002@gmail.com</p>
+        <br>
+        <br>
+        <a class="anker_end" href="#head">!!....GOTO_TOP....!!</a>
+    </div>
+
+
+    <script>
+        function my_fnction() {
+            var navbar = document.getElementById('nav');
+            navbar.classList.toggle('show');
+        }
+
+        function calculate_cgpa() {
+            var sem1 = parseFloat(document.getElementById('sem-1').value);
+            var sem2 = parseFloat(document.getElementById('sem-2').value);
+            var sem3 = parseFloat(document.getElementById('sem-3').value);
+            var sem4 = parseFloat(document.getElementById('sem-4').value);
+            var sem5 = parseFloat(document.getElementById('sem-5').value);
+            var sem6 = parseFloat(document.getElementById('sem-6').value);
+            var sem7 = parseFloat(document.getElementById('sem-7').value);
+            var sem8 = parseFloat(document.getElementById('sem-8').value);
+            
+
+
+            var cgpa = (Grade(sem1) * 24 + Grade(sem2) * 24 + Grade(sem3) * 24 + Grade(sem4) * 24 + Grade(sem5) * 24 + Grade(sem6) * 24 + Grade(sem7) * 24 + Grade(sem8) * 24  ) / (24 * 8);
+
+
+            // document.getElementById('calculate').value = cgpa;
+            if (cgpa >= 9) {
+                alert(" \n     Congratulation Topp You Scored Well...!!! \n\n     CGPA : " + cgpa);
+
+            }
+            else if (cgpa >= 8) {
+                alert(" \n     Congratulation You Scored Well...!!! \n\n  keep it up ....!!  \n\n   CGPA : " + cgpa);
+
+            }
+            else if (cgpa >= 7) {
+                alert(" \n     Congratulation good Score...!!! \n\n     CGPA : " + cgpa);
+
+            }
+            else if (cgpa >= 6) {
+                alert(" \n     ohh Little Poor Score...!!! \n\n     CGPA : " + cgpa);
+
+            }
+            else if (cgpa > 5) {
+                alert(" \n     Ohhh Poor Score...!!! \n\n     CGPA : " + cgpa);
+
+            }
+            else if (cgpa <= 5) {
+                alert(" \n   Rest in peace...!!! \n\n     CGPA : " + cgpa);
+
+            }
+
+
+            else {
+                alert(" \n     Congratulation You Scored Well...!!! \n\n     CGPA : " + cgpa);
+
+            }
+        }
+
+        function Grade(x) {
+            if (x >= 90 && x <= 100){
+
+                return 10;
+            }
+            else if (x >= 80 && x <= 89){
+
+                return 9;
+            }
+            else if (x >= 70 && x <= 79){
+
+                return 8;
+            }
+            else if (x >= 60 && x <= 69){
+
+                return 7;
+            }
+            else if (x >= 45 && x <= 59){
+
+                return 6;
+            }
+            else if (x >= 40 && x <= 44){
+
+                return 4;
+            }
+            else{
+
+                return 0;
+            }
+        }
+
+        function reset_nos() {
+            var sem1 = parseFloat(document.getElementById('sem-1').value);
+            var sem2 = parseFloat(document.getElementById('sem-2').value);
+            var sem3 = parseFloat(document.getElementById('sem-3').value);
+            var sem4 = parseFloat(document.getElementById('sem-4').value);
+            var sem5 = parseFloat(document.getElementById('sem-5').value);
+            var sem6 = parseFloat(document.getElementById('sem-6').value);
+            var sem7 = parseFloat(document.getElementById('sem-7').value);
+            var sem8 = parseFloat(document.getElementById('sem-8').value);
+
+            document.getElementById('sem-1').value = 0;
+            document.getElementById('sem-2').value = 0;
+            document.getElementById('sem-3').value = 0;
+            document.getElementById('sem-4').value = 0;
+            document.getElementById('sem-5').value = 0;
+            document.getElementById('sem-6').value = 0;
+            document.getElementById('sem-7').value = 0;
+            document.getElementById('sem-8').value = 0;
+        }
+
+    </script>
+</body>
+
+</html>
